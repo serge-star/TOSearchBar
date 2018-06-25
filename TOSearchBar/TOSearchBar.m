@@ -109,8 +109,7 @@ static const CGFloat kTOSearchBarBackgroundHeightModern = 36.0f;
 - (void)setUpViews
 {
     self.clipsToBounds = YES;
-    self.userInteractionEnabled = YES;
-    
+
     [self setUpBackgroundViews];
     [self setUpPlaceholderViews];
     [self setUpButtons];
