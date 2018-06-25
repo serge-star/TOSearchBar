@@ -407,6 +407,9 @@ static const CGFloat kTOSearchBarBackgroundHeightModern = 36.0f;
 }
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    if (!self.userInteractionEnabled) {
+        return nil;
+    }
     
     // Make sure the 'clear' button receives priority touch events
     UIView *targetView = self.clearButton;
